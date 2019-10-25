@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FONT TASK</title>
+	<style type="text/css">
+		@font-face{
+			font-family: 'Lato';
+			src: url('Lato/Lato-Regular.ttf');
+			src: url('Lato/Lato-Regular.ttf') format('ttf');
+			src: url('Lato/Lato-Regular.ttf') format('truetype');
+		}
+		body{
+			font-family: Lato;
+		}
+		div{
+			background-color: red;
+			height: 70vh;
+			animation-name:call;
+			animation-duration: 5s;
+		}
+		@keyframes call{
+			from{background-color: red}
+			to{background-color: green}
+		}
+		.parent{
+			margin-top: 50px;
+			background-color: blue;
+			height: 60vh;
+			float: left;
+			width: 50vw;
+			position: relative;
+		}
+		.child{
+			width: 5%;
+			height: 5vh;
+			background-color: white;
+			position: absolute;
+			animation-name: child;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes child{
+			0%{left: 0; background-color: white;}
+			25%{left: 95%; background-color: yellow; top: 0}
+			50%{left: 95%; background-color: red; top: 55vh;}
+			75%{left: 0; background-color: pink; top: 55vh;}
+			100%{left: 0; background-color: green; top: 0;}
+		}
+		.img{
+			width: 50vw;
+			float: left;
+			height: 60vh;
+			background: url(bg.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			animation-name: image;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes image{
+			from{background: url(bg.jpg); background-repeat: no-repeat; background-size: contain;}
+			to{background: url(ent.jpg); background-repeat: no-repeat; background-size: contain;}
+		}
+	</style>
+</head>
+<body>
+	<!-- <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div> -->
+	<section class="parent">
+		<section class="child"></section>
+	</section>
+	<section class="img">
+
+
+</body>
+</html>
